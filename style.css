@@ -1,0 +1,41 @@
+body {
+    font-family: "Trebuchet MS", sans-serif;
+    background: #F7F6F2;
+    color: #28251D;
+    max-width: 500px;
+    margin: 60px auto;
+}
+
+h1 { 
+    color: #01696F; 
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: white;
+    border: 1px solid #E0DED8;
+    padding: 14px 18px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.texto-habito {
+    cursor: pointer;
+    flex-grow: 1;
+}
+
+.btn-eliminar {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
