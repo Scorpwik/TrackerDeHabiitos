@@ -31,6 +31,13 @@ li {
     flex-grow: 1;
 }
 
+/* Clase para hábitos completados */
+.tachado {
+    text-decoration: line-through;
+    color: #888888;
+    background-color: #e9ecef;
+}
+
 .btn-eliminar {
     background-color: #dc3545;
     color: white;
