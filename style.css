@@ -1,48 +1,90 @@
 body {
-    font-family: "Trebuchet MS", sans-serif;
-    background: #F7F6F2;
-    color: #28251D;
-    max-width: 500px;
-    margin: 60px auto;
+    font-family: system-ui, -apple-system, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    padding-top: 50px;
+}
+
+.container {
+    max-width: 600px;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.05);
 }
 
 h1 { 
-    color: #01696F; 
+    color: #2c3e50; 
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 25px;
 }
 
 ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 li {
-    background: white;
-    border: 1px solid #E0DED8;
-    padding: 14px 18px;
-    margin-bottom: 10px;
+    background: #ffffff;
+    border: 1px solid #e1e4e8;
+    padding: 12px 16px;
+    margin-bottom: 12px;
     border-radius: 8px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: all 0.2s ease-in-out;
+}
+
+li:hover {
+    border-color: #b3d4fc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.04);
 }
 
 .texto-habito {
     cursor: pointer;
     flex-grow: 1;
+    font-size: 16px;
+    font-weight: 500;
+    color: #34495e;
 }
 
 /* Clase para hábitos completados */
 .tachado {
     text-decoration: line-through;
-    color: #888888;
-    background-color: #e9ecef;
+    color: #95a5a6;
+    background-color: #f8f9fa;
+    border-color: #ecf0f1;
+}
+.tachado .texto-habito {
+    color: #95a5a6;
 }
 
 .btn-eliminar {
-    background-color: #dc3545;
+    background-color: #ff4757;
     color: white;
     border: none;
-    border-radius: 4px;
-    padding: 5px 10px;
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: 600;
     cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-eliminar:hover {
+    background-color: #ff6b81;
+}
+
+/* Estilizar el botón de bootstrap para que combine */
+.btn-primary {
+    background-color: #3498db;
+    border-color: #3498db;
+    font-weight: 600;
+}
+.btn-primary:hover {
+    background-color: #2980b9;
+    border-color: #2980b9;
 }
