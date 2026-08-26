@@ -63,16 +63,17 @@ lista.addEventListener("click", (event) => {
     const liPadre = elementoClick.closest("li");
     if (!liPadre) return;
     
-    const id = parseInt(liPadre.dataset.id);
+    // Obtener id como string para evitar problemas con datos antiguos en localStorage
+    const id = String(liPadre.dataset.id);
     
     // Si hizo clic en el botón de eliminar
     if (elementoClick.classList.contains("btn-eliminar")) {
-        // Arrow function y filter
-        habitos = habitos.filter((h) => h.id !== id);
+        // Arrow function y filter comparando strings
+        habitos = habitos.filter((h) => String(h.id) !== id);
     } 
     // Si hizo clic en cualquier otra parte del <li> (para marcar como completado)
     else {
-        const habitoEncontrado = habitos.find((h) => h.id === id);
+        const habitoEncontrado = habitos.find((h) => String(h.id) === id);
         if (habitoEncontrado) {
             habitoEncontrado.completado = !habitoEncontrado.completado;
         }
