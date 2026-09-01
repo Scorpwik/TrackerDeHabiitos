@@ -26,32 +26,49 @@ body {
     overflow-y: auto;
 }
 
+.header-panel {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 20px;
+    border-bottom: 2px solid #000000;
+    padding-bottom: 12px;
+}
+
+.header-panel h2 {
+    margin-bottom: 0;
+    border-bottom: none !important;
+    padding-bottom: 0 !important;
+}
+
 .resumen-habitos {
     display: flex;
-    gap: 16px;
+    gap: 10px;
     flex-wrap: wrap;
+    justify-content: flex-end;
 }
 
 .stat-card {
     background: #000000;
     color: #ffffff;
-    min-width: 150px;
-    padding: 18px 20px;
-    border-left: 4px solid #00E5FF;
+    min-width: 100px;
+    padding: 8px 10px;
+    border-left: 3px solid #00E5FF;
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 4px;
+    line-height: 1.1;
 }
 
 .stat-card span {
-    font-size: 0.75rem;
+    font-size: 0.62rem;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 0.8px;
     opacity: 0.8;
 }
 
 .stat-card strong {
-    font-size: 1.8rem;
+    font-size: 1.1rem;
     line-height: 1;
 }
 
