@@ -5,29 +5,15 @@ let habitos = JSON.parse(localStorage.getItem('habitos')) || [];
 const form = document.getElementById('form-habito');
 const input = document.getElementById('input-habito');
 const lista = document.getElementById('lista-habitos');
-const totalHabitosEl = document.getElementById('total-habitos');
-const habitosCompletadosEl = document.getElementById('habitos-completados');
-const habitosPendientesEl = document.getElementById('habitos-pendientes');
 
 // Función para guardar en localStorage
 const guardarDatos = () => {
     localStorage.setItem('habitos', JSON.stringify(habitos));
 };
 
-const actualizarEstadisticas = () => {
-    const total = habitos.length;
-    const completadas = habitos.filter((habito) => habito.completado).length;
-    const pendientes = habitos.filter((habito) => !habito.completado).length;
-
-    totalHabitosEl.textContent = total;
-    habitosCompletadosEl.textContent = completadas;
-    habitosPendientesEl.textContent = pendientes;
-};
-
 // Renderizado dinámico desde JS (Requerimiento)
 const renderizar = () => {
     lista.innerHTML = "";
-    actualizarEstadisticas();
     
     habitos.forEach((habito) => {
         // Uso de destructuring
