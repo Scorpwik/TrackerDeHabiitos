@@ -12,22 +12,22 @@
     <div class="container-fluid p-0">
         <div class="row g-0 min-vh-100">
             <!-- Sidebar / Área de ingreso -->
-            <div class="col-12 col-md-4 col-lg-3 sidebar-panel p-4 p-md-5">
-                <h1 class="h3 mb-4 fw-bold">Gestor Diarios</h1>
-                <p class="mb-5 text-white-50">Administra tus actividades y hábitos desde este panel de control.</p>
+            <div class="col-12 col-md-4 col-lg-3 sidebar-panel p-4 p-md-5 d-flex flex-column justify-content-center">
+                <h1 class="h2 mb-3 fw-bold title-accent">Gestor Diarios</h1>
+                <p class="mb-5 text-white-50 small">Administra tus actividades con un enfoque minimalista y directo.</p>
                 
                 <form id="form-habito" class="d-flex flex-column gap-3 mb-3">
                     <div>
-                        <label for="input-habito" class="form-label text-uppercase small fw-bold tracking-wider">Registrar Nuevo Hábito</label>
-                        <input type="text" id="input-habito" class="form-control form-control-lg border-0 shadow-none" placeholder="Escribe aquí tu meta..." required>
+                        <label for="input-habito" class="form-label text-uppercase small fw-bold tracking-wider">Nuevo Hábito</label>
+                        <input type="text" id="input-habito" class="form-control form-control-lg border-0 rounded-0 shadow-none" placeholder="¿Qué harás hoy?" required>
                     </div>
-                    <button type="submit" class="btn btn-warning fw-bold mt-3 text-uppercase py-2">Guardar Tarea</button>
+                    <button type="submit" class="btn btn-accent rounded-0 fw-bold mt-2 text-uppercase py-3">Agregar</button>
                 </form>
             </div>
 
             <!-- Área principal de listado -->
             <div class="col-12 col-md-8 col-lg-9 content-panel p-4 p-md-5">
-                <h2 class="h5 mb-4 text-secondary text-uppercase fw-bold border-bottom pb-3">Tus Tareas Activas</h2>
+                <h2 class="h5 mb-5 text-black text-uppercase fw-bold border-bottom border-dark border-2 pb-3">Tareas Activas</h2>
                 <ul id="lista-habitos" class="d-flex flex-column gap-3">
                     <!-- La lista se generará desde JS -->
                 </ul>
