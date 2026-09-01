@@ -34,6 +34,10 @@ TrackerDeHabiitos/
 - Git instalado
 - Cuenta en GitHub (opcional para subir el proyecto)
 
+## Demo en GitHub Pages
+
+https://scorpwik.github.io/TrackerDeHabiitos/
+
 ## Cómo ejecutar
 
 1. Abrir `index.html` en el navegador.
